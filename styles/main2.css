@@ -1,0 +1,77 @@
+body{padding: 30px;}
+.table {margin: 50px}
+.row {display: flex}
+.n1 {
+    width: 0; 
+    height: 0; 
+    border-top: 40px solid #ffffff;
+    position: relative;
+    border-right: 200px solid transparent;
+    transition: all 0.5s;
+    animation-name: n1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s
+}
+.n2 {
+    height:40px; 
+    width: 200px; 
+    position: relative;
+    animation-name: n2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s
+    }
+.n2:before {
+    content: "";
+    top: -34px;
+    border-top: 35px solid #ffffff;
+    border-right: 200px solid transparent;
+    animation-name: n2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s
+    }
+    .n3 {
+        height: 74px; 
+        width: 200px; 
+        margin: -34px 0 0 0;
+        position: relative;
+        animation-name: n2;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 2s
+        }
+    .n3:before {
+        content: "";
+        top: -34px;
+        border-top: 35px solid #ffffff;
+        border-right: 200px solid transparent;
+        animation-name: n2;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 2s
+        }
+    @keyframes n1 {
+        from { background-color: white}
+        25% {background-color: lightgray}
+        50% {background-color: gray}
+        75% {background-color: lightgray}
+        to {background-color: white}
+    }
+    @keyframes n2 {
+        from {background-color: lightgrey}
+        25% {background-color: grey}
+        50% {background-color: lightgrey}
+        75% {background-color: grey}
+        to {background-color: lightgray}
+    }
+    @keyframes n3 {
+        from {background-color: lightgrey}
+        25% {background-color: grey}
+        50% {background-color: lightgrey}
+        75% {background-color: grey}
+        to {background-color: lightgray}
+    }
+
+
+
+    
